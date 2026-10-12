@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="10dp" android:background="@color/paper">
+    <Button android:id="@+id/navHome" style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"
+        android:textAllCaps="false" android:text="Home" android:textSize="14sp" />
+    <Button android:id="@+id/navSchedule" style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"
+        android:textAllCaps="false" android:text="Schedule" android:textSize="14sp" />
+    <Button android:id="@+id/navHomework" style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"
+        android:textAllCaps="false" android:text="Homework" android:textSize="14sp" />
+</LinearLayout>

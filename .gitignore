@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+*.iml
+local.properties
+build/
+app/build/
+.DS_Store
+/captures/
+.externalNativeBuild/
+.cxx/
+SETUP_GRADLE_WRAPPER.bat
+setup-gradle-wrapper.ps1

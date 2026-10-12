@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/page_bg">
+    <include layout="@layout/view_header" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    style="@style/SectionLabel" android:text="Next class" android:layout_marginBottom="10dp" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="18dp" android:background="@drawable/card_bg">
+    <TextView android:id="@+id/nextClassName" android:layout_width="match_parent"
+        android:layout_height="wrap_content" style="@style/SectionLabel" android:text="COMP3074" />
+    <TextView android:id="@+id/nextClassTime" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="7dp"
+        android:textColor="@color/muted" android:textSize="15sp" android:text="Monday • 10:00 AM" />
+</LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    style="@style/SectionLabel" android:text="Homework due soon" android:layout_marginTop="26dp"
+    android:layout_marginBottom="10dp" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="18dp" android:background="@drawable/card_bg">
+    <TextView android:id="@+id/homeworkOneName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/ink" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:text="Math Worksheet" />
+    <TextView android:id="@+id/homeworkOneDue" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/muted" android:layout_marginTop="4dp" android:textSize="13sp" />
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" android:background="@color/line" />
+    <TextView android:id="@+id/homeworkTwoName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/ink" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:text="COMP3074 Lab" />
+    <TextView android:id="@+id/homeworkTwoDue" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/muted" android:layout_marginTop="4dp" android:textSize="13sp" />
+</LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    style="@style/SectionLabel" android:text="Your progress" android:layout_marginTop="26dp"
+    android:layout_marginBottom="10dp" />
+<TextView android:id="@+id/progressText" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp" android:background="@drawable/soft_bg"
+    android:text="0 of 3 homework items completed" android:textColor="@color/blue_dark" android:textSize="15sp" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:layout_marginTop="22dp">
+    <Button android:id="@+id/openSchedule" android:layout_width="0dp" android:layout_weight="1"
+        android:layout_height="52dp" android:text="Class Schedule" android:textAllCaps="false"
+        android:background="@drawable/primary_bg" android:textColor="@color/paper" />
+    <Button android:id="@+id/openHomework" android:layout_width="0dp" android:layout_weight="1"
+        android:layout_marginStart="10dp" android:layout_height="52dp" android:text="Homework"
+        android:textAllCaps="false" android:background="@drawable/soft_bg" android:textColor="@color/blue_dark" />
+</LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="18dp" android:text="UI prototype • Changes are not saved permanently."
+    android:textSize="12sp" android:textColor="@color/muted" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

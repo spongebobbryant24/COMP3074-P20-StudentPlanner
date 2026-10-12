@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/page_bg">
+    <include layout="@layout/view_header" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionLabel"
+    android:text="My Homework" android:layout_marginBottom="6dp" />
+<TextView android:id="@+id/homeworkSummary" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Track upcoming assignments and completion." android:textColor="@color/muted"
+    android:textSize="13sp" android:layout_marginBottom="16dp" />
+<LinearLayout android:id="@+id/homeworkListContainer" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical" />
+<Button android:id="@+id/addHomeworkButton" android:layout_width="match_parent" android:layout_height="54dp"
+    android:layout_marginTop="16dp" android:text="+ Add Homework" android:textAllCaps="false"
+    android:textColor="@color/paper" android:background="@drawable/primary_bg" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

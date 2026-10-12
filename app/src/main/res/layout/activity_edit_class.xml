@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/page_bg">
+    <include layout="@layout/view_header" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionLabel"
+    android:text="Class details" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Class Name" />
+<EditText android:id="@+id/classNameInput" android:layout_width="match_parent" android:layout_height="52dp"
+    android:inputType="textCapWords" android:singleLine="true" android:paddingStart="14dp" android:paddingEnd="14dp"
+    android:hint="Example: COMP3074" android:textSize="15sp" android:background="@drawable/field_bg" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Day" />
+<Spinner android:id="@+id/classDaySpinner" android:layout_width="match_parent" android:layout_height="52dp"
+    android:paddingStart="10dp" android:paddingEnd="10dp" android:background="@drawable/field_bg" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Start Time" />
+<Button android:id="@+id/startTimeButton" android:layout_width="match_parent" android:layout_height="52dp"
+    android:textAllCaps="false" android:text="Choose a start time" android:textColor="@color/ink"
+    android:background="@drawable/field_bg" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="End Time" />
+<Button android:id="@+id/endTimeButton" android:layout_width="match_parent" android:layout_height="52dp"
+    android:textAllCaps="false" android:text="Choose an end time" android:textColor="@color/ink"
+    android:background="@drawable/field_bg" />
+<Button android:id="@+id/saveClassButton" android:layout_width="match_parent" android:layout_height="54dp"
+    android:layout_marginTop="28dp" android:text="Save Class" android:textAllCaps="false"
+    android:textColor="@color/paper" android:background="@drawable/primary_bg" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="11dp" android:orientation="horizontal">
+    <Button android:id="@+id/deleteClassButton" android:layout_width="0dp" android:layout_weight="1"
+        android:layout_height="50dp" android:text="Delete" android:textAllCaps="false"
+        android:textColor="@color/red" android:background="@drawable/field_bg" />
+    <Button android:id="@+id/cancelClassButton" android:layout_width="0dp" android:layout_weight="1"
+        android:layout_marginStart="10dp" android:layout_height="50dp" android:text="Cancel"
+        android:textAllCaps="false" android:textColor="@color/ink" android:background="@drawable/field_bg" />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

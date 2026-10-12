@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/page_bg">
+    <include layout="@layout/view_header" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionLabel"
+    android:text="Homework details" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Title" />
+<EditText android:id="@+id/homeworkTitleInput" android:layout_width="match_parent" android:layout_height="52dp"
+    android:inputType="textCapSentences" android:singleLine="true" android:paddingStart="14dp" android:paddingEnd="14dp"
+    android:hint="Example: Math worksheet" android:textSize="15sp" android:background="@drawable/field_bg" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Class" />
+<Spinner android:id="@+id/homeworkCourseSpinner" android:layout_width="match_parent" android:layout_height="52dp"
+    android:paddingStart="10dp" android:paddingEnd="10dp" android:background="@drawable/field_bg" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Due Date" />
+<Button android:id="@+id/dueDateButton" android:layout_width="match_parent" android:layout_height="52dp"
+    android:textAllCaps="false" android:text="Choose a due date" android:textColor="@color/ink"
+    android:background="@drawable/field_bg" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FormLabel"
+    android:text="Due Time" />
+<Button android:id="@+id/dueTimeButton" android:layout_width="match_parent" android:layout_height="52dp"
+    android:textAllCaps="false" android:text="Choose a due time" android:textColor="@color/ink"
+    android:background="@drawable/field_bg" />
+<CheckBox android:id="@+id/completedCheckbox" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="20dp" android:text="Completed" android:textSize="15sp" android:textColor="@color/ink" />
+<Button android:id="@+id/saveHomeworkButton" android:layout_width="match_parent" android:layout_height="54dp"
+    android:layout_marginTop="16dp" android:text="Save Homework" android:textAllCaps="false"
+    android:textColor="@color/paper" android:background="@drawable/primary_bg" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="11dp" android:orientation="horizontal">
+    <Button android:id="@+id/deleteHomeworkButton" android:layout_width="0dp" android:layout_weight="1"
+        android:layout_height="50dp" android:text="Delete" android:textAllCaps="false"
+        android:textColor="@color/red" android:background="@drawable/field_bg" />
+    <Button android:id="@+id/cancelHomeworkButton" android:layout_width="0dp" android:layout_weight="1"
+        android:layout_marginStart="10dp" android:layout_height="50dp" android:text="Cancel"
+        android:textAllCaps="false" android:textColor="@color/ink" android:background="@drawable/field_bg" />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>
